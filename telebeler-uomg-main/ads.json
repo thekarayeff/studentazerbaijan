@@ -1,0 +1,44 @@
+{
+  "ads": [
+    {
+      "id": "ad-101",
+      "title": "McDonald's",
+      "text": "",
+      "image": "./img/dim.jpg",
+      "link": "dim.html",
+      "tag": "Text"
+    },
+    {
+      "id": "ad-102",
+      "title": "ÜOMG Kalkulyatoru",
+      "text": "Fənn balı və kreditlə ortalamanı dərhal hesabla.",
+      "image": "./img/university.jpg",
+      "link": "uomg.html",
+      "tag": "Alət"
+    },
+    {
+      "id": "ad-103",
+      "title": "Telegram İcması",
+      "text": "Elanlar, yeniliklər və tələbə dəstəyi üçün qoşul.",
+      "image": "./img/join.jpg",
+      "link": "https://t.me/+WUKxtnDjo2E5YTcy",
+      "tag": "İcma"
+    },
+    {
+      "id": "ad-104",
+      "title": "Semestr Bal Hesabı",
+      "text": "Yekun nəticəni əvvəlcədən gör və planını qur.",
+      "image": "./img/semester.jpg",
+      "link": "uomg.html",
+      "tag": "BDU"
+    },
+    {
+      "id": "ad-105",
+      "title": "Sərbəst İş Hazırlanması",
+      "text": "Sərbəst iş üçün struktur, məzmun və format dəstəyi.",
+      "image": "./img/university.jpg",
+      "link": "https://t.me/the_karayeff",
+      "tag": "Xidmət"
+    }
+  ]
+}

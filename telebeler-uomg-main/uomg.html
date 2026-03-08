@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="az">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#0f172a">
+    <meta name="description" content="ÜOMG ortalamasını fənn və kreditlərə əsasən hesablayın">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=Sora:wght@400;600;700;800&display=swap"
+        rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>ÜOMG Hesablama | Tələbələr</title>
+</head>
+
+<body class="uomg-page">
+    <div id="loading">
+        <dotlottie-wc src="https://lottie.host/ad8842c5-a789-4128-a71f-8950acb8462c/bP3sG1kNgZ.lottie"
+            style="width:300px;height:300px" autoplay loop></dotlottie-wc>
+        <div class="progress-container">
+            <div id="progress-bar"></div>
+        </div>
+        <p id="percent">0%</p>
+    </div>
+
+    <header id="top">
+        <div class="container">
+            <div class="h_boxes">
+                <a class="h_logo" href="./">
+                    <i class="fa-solid fa-graduation-cap"></i>
+                    <p>Tələbələr</p>
+                </a>
+                <nav class="navbar">
+                    <ul class="comp">
+                        <li><a href="./">Ana səhifə</a></li>
+                        <li><a href="#uomg-tool">ÜOMG</a></li>
+                        <li><a href="https://t.me/the_karayeff">Dəstək</a></li>
+                        <li><a href="https://t.me/+WUKxtnDjo2E5YTcy">Qoşul</a></li>
+                    </ul>
+                </nav>
+                <button class="theme_toggle theme-toggle" type="button" aria-label="Temanı dəyiş">
+                    <i class="fa-solid fa-moon"></i>
+                    <span>Dark</span>
+                </button>
+                <button class="h_bar" aria-label="Mobil menyunu aç">
+                    <i class="fa-solid fa-bars" aria-hidden="true"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <div class="mobile">
+        <div class="mobile_title">
+            <p>GradEX</p>
+            <button class="close" aria-label="Menyunu bağla"><i class="fa-solid fa-xmark" aria-hidden="true"></i></button>
+        </div>
+        <div class="mobile_bod">
+            <a href="./">Ana səhifə</a>
+            <a href="#uomg-tool">ÜOMG aləti</a>
+            <a href="https://t.me/the_karayeff">Dəstək</a>
+            <a href="https://t.me/+WUKxtnDjo2E5YTcy">Bizə qoşulun</a>
+            <p>Fənn ballarınızı və kreditləri daxil edin, sistem ortalamanı dərhal hesablasın.</p>
+        </div>
+    </div>
+
+    <main>
+        <section class="mainer">
+            <div class="container">
+                <div class="hero uomg_hero">
+                    <p class="hero_kicker">ÜOMG Kalkulyatoru</p>
+                    <h1>Sadə və aydın ÜOMG hesablanması</h1>
+                    <p class="hero_desc">Aşağıda hər fənn üçün bal və kredit daxil edin. Nəticə avtomatik ağırlıqlı orta ilə hesablanır.</p>
+                </div>
+
+                <div id="uomg-tool" class="gpa_box">
+                    <div class="secim">
+                        <label for="fennSay">Fənn sayı</label>
+                        <select id="fennSay">
+                            <option value="3" selected>3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+                        </select>
+                    </div>
+                    <p class="form_hint">Məsələn: Bal `91.5`, Kredit `3` kimi daxil edin.</p>
+
+                    <div id="fennler"></div>
+                    <button id="hesabla" type="button">Hesabla</button>
+                    <p id="netice">Ortalama: -</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="stips" class="stip_table">
+            <div class="container">
+                <div class="table_card">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th colspan="2">Təqaüd Cədvəli</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Adi</td>
+                                <td>110₼</td>
+                            </tr>
+                            <tr>
+                                <td>Zərbəçi</td>
+                                <td>160₼</td>
+                            </tr>
+                            <tr>
+                                <td>Əlaçı</td>
+                                <td>200₼</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <p>Qeyd olunan məbləğlər 2% komissiya haqqı nəzərə alınmadan hesablanmışdır.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <a href="./">Ana Səhifə <i class="fa-solid fa-chevron-right"></i></a>
+        <div class="by">
+            <p> <strong>by</strong> <a href="https://t.me/the_karayeff">theKarayeff</a></p>
+        </div>
+    </footer>
+        <script src="https://unpkg.com/@lottiefiles/dotlottie-wc@0.8.11/dist/dotlottie-wc.js" type="module"></script>
+    <script src="https://kit.fontawesome.com/1b28aef70a.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+    <script>
+        if ("serviceWorker" in navigator) {
+            navigator.serviceWorker.register("./sw.js");
+        }
+    </script>
+    <script src="gp.js"></script> 
+    <script src="script.js"></script>
+</body>
+
+</html>

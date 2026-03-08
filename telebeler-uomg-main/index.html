@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="az">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="manifest" href="manifest.json">
+    <meta name="theme-color" content="#0f172a">
+    <meta name="description" content="Tələbələr üçün ÜOMG, semestr və DİM balı hesablama alətləri">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=Sora:wght@400;600;700;800&display=swap"
+        rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Tələbələr | Akademik Alətlər</title>
+</head>
+
+<body>
+    <div id="loading">
+        <dotlottie-wc src="https://lottie.host/ad8842c5-a789-4128-a71f-8950acb8462c/bP3sG1kNgZ.lottie"
+            style="width:300px;height:300px" autoplay loop></dotlottie-wc>
+
+        <div class="progress-container">
+            <div id="progress-bar"></div>
+        </div>
+
+        <p id="percent">0%</p>
+    </div>
+    <header id="top">
+        <div class="container">
+            <div class="h_boxes">
+                <a class="h_logo" href="#">
+                    <i class="fa-solid fa-graduation-cap"></i>
+                    <p>Tələbələr</p>
+                </a>
+                <nav class="navbar">
+                    <ul class="comp">
+                        <li><a href="#">Ana səhifə</a></li>
+                        <li><a href="#tools">Alətlər</a></li>
+                        <li><a href="https://t.me/the_karayeff">Dəstək</a></li>
+                        <li><a href="https://t.me/+WUKxtnDjo2E5YTcy">Qoşul</a></li>
+                    </ul>
+                </nav>
+                <button class="theme_toggle theme-toggle" type="button" aria-label="Temanı dəyiş">
+                    <i class="fa-solid fa-moon"></i>
+                    <span>Dark</span>
+                </button>
+                <button class="h_bar" aria-label="Mobil menyunu aç">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <div class="mobile">
+        <div class="mobile_title">
+            <p>GradEX</p>
+            <button class="close" aria-label="Menyunu bağla"><i class="fa-solid fa-xmark" aria-hidden="true"></i></button>
+        </div>
+        <div class="mobile_bod">
+            <a href="#">Ana səhifə</a>
+            <a href="#tools">Alətlər</a>
+            <a href="https://t.me/the_karayeff">Dəstək</a>
+            <a href="https://t.me/+WUKxtnDjo2E5YTcy">Bizə qoşulun</a>
+            <p>
+                Versiya: 1.3.0<br />
+                Yaradan: <i><a href="#">theKarayeff</a></i> ❤️<br />
+                Bu tətbiq <b>Visual Studio</b> ilə hazırlanmışdır.<br />
+                Universitet həyatınızı asanlaşdırmaq üçün ÜOMG və semestr hesablama alətləri ilə zənginləşdirilib.
+            </p>
+        </div>
+    </div>
+
+    <main>
+        <section class="mainer">
+            <div class="container">
+                <section class="ad_zone" aria-label="Reklamlar">
+                    <div class="ad_zone_head">
+                        <p>Reklam və Elanlar</p>
+                        <div class="ad_controls">
+                            <button id="ad-prev" type="button" aria-label="Geri">
+                                <i class="fa-solid fa-chevron-left"></i>
+                            </button>
+                            <button id="ad-next" type="button" aria-label="İrəli">
+                                <i class="fa-solid fa-chevron-right"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="ad_marquee">
+                        <div id="ad-track" class="ad_track" data-ad-ids="ad-101,ad-102,ad-103,ad-104,ad-105"></div>
+                    </div>
+                </section>
+
+                <div class="hero">
+                    <p class="hero_kicker">Akademik kalkulyator platforması</p>
+                    <h1>Universitet proseslərini 1 səhifədə idarə et</h1>
+                    <p class="hero_desc">
+                        ÜOMG, semestr və DİM nəticələri üçün çevik hesablayıcılar. Mobil və desktop-da sürətli, sadə və
+                        aydın istifadə təcrübəsi.
+                    </p>
+                    <div class="hero_actions">
+                        <a href="#tools" class="hero_btn">Alətləri aç</a>
+                        <a href="https://t.me/+WUKxtnDjo2E5YTcy" class="hero_btn hero_btn_outline">Telegram icması</a>
+                    </div>
+                </div>
+
+                <div class="mainPage">
+                    <div id="tools" class="mainCards">
+                        <a href="uomg.html" class="news_box">
+                            <div class="xeber_img">
+                                <img src="img/university.jpg" alt="news">
+                            </div>
+                            <div class="xeber_text">
+                                <div class="sub_text">
+                                    <p class="category">Universitet</p>
+                                    <p class="newsdate"><i class="fa-solid fa-calculator"></i> ÜOMG hesabla</p>
+                                </div>
+                                <div class="news_information">
+                                    <p>Fənlər üzrə semestr balınızı avtomatik hesablayın.</p>
+                                </div>
+                            </div>
+                        </a>
+                        <!-- 2 -->
+                        <a href="kesr.html" class="news_box">
+                            <div class="xeber_img">
+                                <img src="img/fail.jpg" alt="news">
+                            </div>
+                            <div class="xeber_text">
+                                <div class="sub_text">
+                                    <p class="category">Universitet</p>
+                                    <p class="newsdate"><i class="fa-solid fa-money-bill-wave"></i> 25% ödənişi</p>
+                                </div>
+                                <div class="news_information">
+                                    <p>Sürətli və dəqiq kəsr pulu hesablanması.</p>
+                                </div>
+                            </div>
+                        </a>
+                        <!-- 3 -->
+                        <a href="uomg.html" class="news_box">
+                            <div class="xeber_img">
+                                <img src="img/semester.jpg" alt="news">
+                            </div>
+                            <div class="xeber_text">
+                                <div class="sub_text">
+                                    <p class="category">Yalnız BDU</p>
+                                    <p style="font-size: 14px;" class="newsdate"><i
+                                            class="fa-solid fa-calendar-week"></i> Semestr Bal Hesablama</p>
+                                </div>
+                                <div class="news_information">
+                                    <p>Fənlər üzrə ballarını daxil et, yekun nəticəni dərhal gör.</p>
+                                </div>
+                            </div>
+                        </a>
+                        <!-- 4 -->
+                        <a href="https://t.me/+WUKxtnDjo2E5YTcy" class="news_box">
+                            <div class="xeber_img">
+                                <img src="img/join.jpg" alt="news">
+                            </div>
+                            <div class="xeber_text">
+                                <div class="sub_text">
+                                    <p class="category">Telegram</p>
+                                    <p class="newsdate"><i class="fa-brands fa-telegram"></i> Bizə qoşul</p>
+                                </div>
+                                <div class="news_information">
+                                    <p>Birlikdə daha güclüyük – indi qoşul!</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+
+    <script src="https://unpkg.com/@lottiefiles/dotlottie-wc@0.8.11/dist/dotlottie-wc.js" type="module"></script>
+    <script src="https://kit.fontawesome.com/1b28aef70a.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+    <script>
+        if ("serviceWorker" in navigator) {
+            navigator.serviceWorker.register("./sw.js");
+        }
+    </script>
+    <script src="script.js"></script>
+</body>
+
+</html>
